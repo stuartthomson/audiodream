@@ -9,6 +9,7 @@ dependencies:
   - resampy
   - pysoundfile
   - jupyter
+  - matplotlib
   - pip
   - pip:
     - gdown
