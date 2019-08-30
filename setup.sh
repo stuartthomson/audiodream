@@ -18,6 +18,10 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mykey.key -out mycer
 
 cd ~/models/research/audioset
 
-curl http://storage.googleapis.com/eu_audioset/youtube_corpus/v1/features/features.tar.gz | tar -xvz
+gdown https://drive.google.com/uc?id=0B49XSFgf-0yVQk01eG92RHg4WTA
+
+sudo apt-get install unzip
+unzip packed_features.zip
+rm packed_features.zip
 
 jupyter notebook --certfile=~/ssl/mycert.pem --keyfile ~/ssl/mykey.key --no-browser

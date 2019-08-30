@@ -1,0 +1,14 @@
+name: audiodream
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - scipy
+  - tensorflow
+  - six
+  - resampy
+  - pysoundfile
+  - jupyter
+  - pip
+  - pip:
+    - gdown
