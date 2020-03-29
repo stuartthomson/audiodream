@@ -1,15 +1,17 @@
 name: audiodream
 channels:
   - conda-forge
+  - anaconda
 dependencies:
+  - tensorflow-cpu
   - numpy
   - scipy
-  - tensorflow
   - six
   - resampy
-  - pysoundfile
   - jupyter
   - matplotlib
   - pip
   - pip:
+    - soundfile
+    - tf-nightly-gpu
     - gdown
